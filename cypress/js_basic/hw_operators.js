@@ -193,7 +193,6 @@ if (!isIntM) {
         }
     }
 }
-
 result = result + ' це ';
 
 if (!isIntKm) {

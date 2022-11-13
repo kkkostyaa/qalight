@@ -127,45 +127,7 @@ it("toaster HW", () => {
     for (let i = 0; i < 4; i++) {
         generateToast(toasterConfig[i]);
         
-        checkToast(toasterExpect[i]);
-
-
-        //if (cy.get('.ng-tns-c209-54').children().should('exist')) { cy.log('exist') };
-        
-        
-        
-        //cy.log(cy.get('.ng-tns-c209-55').should('exist'));
-        
-        //if (cy.get('.ng-tns-c209-54').find('.ng-reflect-toast').lenght > 0) { cy.log('exist') };
-
-        //if (cy.get('.ng-tns-c209-55').children().should('exist')) {cy.log('not exist')}
-        //.cdk-overlay-container > :nth-child(1) > :nth-child(1) > :nth-child(1) > :nth-child(1)
-
-        //title
-        //.cdk-overlay-container > :nth-child(1) > :nth-child(1) > :nth-child(1)  > :nth-child(1)  > :nth-child(2)  > :nth-child(1) 
-
-        //content
-        //.cdk-overlay-container > :nth-child(1) > :nth-child(1) > :nth-child(1)  > :nth-child(1)  > :nth-child(2)  > :nth-child(2) 
-
-        //icon
-        //.cdk - overlay - container > : nth - child(1) > : nth - child(1) > : nth - child(1) > : nth - child(1) > : nth - child(1) > : nth - child(1) > : nth - child(1) > : nth - child(1) > : nth - child(1) 
-        
-        //color
-        //.cdk-overlay-container > :nth-child(1) > :nth-child(1) > :nth-child(1)  > :nth-child(1) 
-        
-        /*
-        cy.get('body').then(($body) => {
-        if($body.find('nb-toastr-container')) {
-            cy.get('nb-toastr-container').then(toaster => {
-                cy.wrap(toaster).should('contain', expected.title)
-                .and('contain', expected.content)
-                .and('have.css', 'background color')
-                .and('eq', expected.color)
-                
-            })
-        
-        */
-        
+        checkToast(toasterExpect[i]);      
         
         cy.wait(7000);
     }
